@@ -9,13 +9,13 @@ export class Jumble {
     }
 
     get getWPM() {
-        return (this.body.split(' ').length / this.fastestTime) * 60
+        return ((this.body.split(' ').length / this.fastestTime) * 60).toFixed(1)
     }
 
     get sidemenuHTML() {
         return `<div class="p-3 row align-content-center align-items-center justify-content-center">
         <div class="col-2">
-            <button class="btn btn-warning px-4">Start</button>
+            <button class="btn btn-warning px-4" onclick="app.JumblesController.startJumble('${this.name}')">Start</button>
         </div>
         <div class="col-4">
             <span class="ps-3 fs-4">${this.name}</span>
@@ -24,7 +24,7 @@ export class Jumble {
             <i class="fs-4 mdi mdi-clock"></i>
             <span class="ps-3 fs-3">${this.fastestTime == null ? '--.-' : this.fastestTime}s</span>
         </div>
-        <div class="col-3 fs-3 text-end">${this.getWPM} wpm</div>
+        <div class="col-3 fs-3 text-end">${this.getWPM == Infinity ? "--.-" : this.getWPM} wpm</div>
     </div>`
     }
 

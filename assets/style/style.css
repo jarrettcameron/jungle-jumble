@@ -1,1 +1,11 @@
 /* BASIC STYLES HERE */
+
+body {
+    background-image: url('https://s3-alpha-sig.figma.com/img/3d65/deb2/3ae0cacdce9b38d902e8dff73e98ee46?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rs-gDVFxG7pMaT2nxDfXOqnN8IUPYRBbpEqqfflVNvqpOg4htz9BXNXqCLhhSaFKqrdGS~hyL6~4gvqovgcR5~Gk0YrZn4Ad3Ui0uLFo0Xi5tpeEJ9ilpcL6q9~8-c3w7eSl6CBRq-u~9LqlFNX4S7a3hroT78jEDheWA3lSRvbYl4PRhsbaVf21mmsNOngL9uVn446nlBxQ6dkefB1tGuigYtosP4xouc5jW6Z3VzgvATykltSqnnf3uia2fD4D2jIIWZtiTRzQEreq64il3uDv~cIoPrWdVKNGdet96V5TsxHkBDd~bsC9n2p-dVInxTnUNrIfih4G1mDalK-Xdw__')
+}
+
+.btn-warning {
+    background-color: #d4b413;
+    outline-color: #d4b413;
+    border-color: #d4b413;
+}

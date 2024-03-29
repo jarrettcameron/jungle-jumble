@@ -1,24 +1,24 @@
 <section class="row p-5">
-    <div class="col-3 border border-dark rounded text-center p-3">
+    <div class="bg-white col-3 border border-dark rounded text-center p-3 shadow">
         <h1>Jungle Jumble</h1>
     </div>
     <div class="w-100"></div>
     <div class="col-7">
         <div class="row flex-column py-3 me-3">
-            <div class="border border-dark rounded text-start p-5 my-5">
-                <h3 class="d-inline">Easy Jumble</h3>
-                <h3 class="d-inline float-end">Fastest Time</h3>
-                <p>A bunch of words</p>
+            <div class="bg-white border border-dark rounded text-start p-5 my-5 shadow">
+                <h3 class="d-inline" id="name">Select a jumble to start!</h3>
+                <h3 class="d-inline float-end" id="fastestTime">Fastest Time will appear here</h3>
+                <p id="prompt">The prompt to type will appear here!</p>
             </div>
-            <div class="col border border-dark rounded p-5">
-                <form>
-                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+            <div class="bg-white col border border-dark rounded p-5 shadow">
+                <form onsubmit="app.JumblesController.submitJumble()">
+                    <textarea class="form-control" name="prompt" id="" cols="30" rows="10"></textarea>
                     <button class="btn btn-primary text-center w-100 my-2">Submit</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="col-5 bg-black text-light">
+    <div class="bg-white col-5 rounded border border-dark shadow pt-3">
         <h3 class="text-center">Jumbles!</h3>
         <div id="jumble-container">
 

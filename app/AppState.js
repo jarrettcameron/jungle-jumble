@@ -19,6 +19,8 @@ class ObservableAppState extends EventEmitter {
     })
   ]
 
+  activeJumble = null
+
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
